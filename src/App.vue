@@ -38,11 +38,13 @@
 </template>
 
 <script>
+import config from "./config";
+
 export default {
   name: "App",
   data() {
     return {
-      api_key: "366649fcf37e7506cbf164a1c4f9f3cc",
+      api_key: config.api,
       url_base: "https://api.openweathermap.org/data/2.5/",
       query: "",
       weather: {},
